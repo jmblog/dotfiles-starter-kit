@@ -1,5 +1,7 @@
 # Dotfiles Starter Kit
 
+Make your own dotfiles! 
+
 ## Installation
 
 Fork this repository by clicking the **Fork** button in the header of this repository.
