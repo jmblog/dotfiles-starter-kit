@@ -1,0 +1,20 @@
+# Install native apps
+# Usage: `brew bundle ~/.dotfiles/osx/homebrew/Caskfile`
+
+tap phinze/homebrew-cask
+install brew-cask
+
+upgrade
+
+# Search available apps in http://caskroom.io/
+#cask install atom
+#cask install coteditor
+#cask install dropbox
+#cask install firefox
+#cask install google-chrome
+#cask install google-chrome-canary
+#cask install google-japanese-ime
+#cask install imageoptim
+#cask install iterm2
+#cask install keyremap4macbook
+

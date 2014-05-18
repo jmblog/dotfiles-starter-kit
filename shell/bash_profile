@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+DOTFILES=$(cd $(dirname $0) && pwd)
+
+files=(
+  $DOTFILES/shell/bash_options # Options
+  $DOTFILES/shell/bash_exports # Exports
+  $DOTFILES/shell/bash_aliases # Aliases
+  $DOTFILES/shell/bash_prompt  # Custom bash prompt
+  $HOME/.bash_profile.local    # Local and private settings not under version control (e.g. git credentials)
+  $DOTFILES/shell/bash_paths   # Path modifications (must source after `.bash_profile.local` in case of custom `brew` location)
+)
+
+# If these files are readable, source them
+for i in ${!files[*]}
+do
+  if [[ -r ${files[$i]} ]]; then
+    source ${files[$i]}
+  fi
+done
+
+unset files
+
+# bash-completion
+if [ $(type -P brew) ]; then
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
+fi
+

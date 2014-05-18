@@ -1,0 +1,15 @@
+# Install command-line tools using Homebrew
+# Usage: `brew bundle ~/.dotfiles/osx/homebrew/Brewfile`
+
+### Make sure we're using the latest Homebrew
+update
+
+### Upgrade any already-installed formulae
+upgrade
+
+### packages
+install bash-completion
+#install node
+
+### Remove outdated versions from the cellar
+cleanup
