@@ -49,6 +49,10 @@ $ ./setup.sh
 
 ## Customizing
 
+### Adding dotfiles
+
+After adding any dotfiles in your favorite directory, don't forget modifying `setup.sh`.
+
 ### Node packages installation
 
 Add your favorite packages into `node/npm.sh`. 
