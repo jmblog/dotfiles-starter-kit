@@ -49,7 +49,7 @@ $ ./setup.sh
 
 ## Customizing
 
-### Adding dotfiles
+### Adding dotfiles (like `.zshrc`)
 
 After adding any dotfiles in your favorite directory, don't forget modifying `setup.sh`.
 
